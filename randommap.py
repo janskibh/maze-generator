@@ -6,7 +6,7 @@ import math
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
-path = "D:/DATA JAN/_Python/krunker-map"
+path = os.getcwd()
 
 
 m = open(path + "/map.json", 'r')

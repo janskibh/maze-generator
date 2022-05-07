@@ -1,12 +1,15 @@
 from PIL import Image, ImageDraw
 import random
 from datetime import datetime, date
+import os
 #import seaborn
 #import os
 #from instabot import Bot
 
 #seaborn.set_theme()
 #colors = seaborn.hls_palette(10, l=.5, s=.8).as_hex()
+
+path = os.getcwd()
 
 palettes = [
     ["#2d363d","#b32e49","#8f7b62","#f25b22","#e9d84c"], #orange
@@ -91,7 +94,7 @@ def generate():
 
     path = os.path.abspath("images")+"/"+today.strftime("%Y")+"/"+today.strftime("%m")+"/"+today.strftime("%d")+"/"
 """
-    image.save(f"D:\DATA JAN\_Python\krunker-map\maps\RandomMap{map_nb}.png")
+    image.save(f"{path}\maps\RandomMap{map_nb}.png")
 
     print("Done !")
 

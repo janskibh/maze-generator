@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
-dossier = "D:/DATA JAN/_Python/krunker-map"
+dossier = os.getcwd()
 
 m = open(dossier + "/map.json", 'r')
 data = json.loads(m.read())
@@ -419,4 +419,4 @@ with open(f"{dossier}/maps/RandomMaze/{map_Name}.json", "w") as m:
 
 print("Maze successfully generated")
 print(f"number of objects : {str(objects_nbr)}")
-image.save(f"D:\DATA JAN\_Python\krunker-map\maps\RandomMaze\{map_Name}_thumb.png")
+image.save(f"{dossier}\maps\RandomMaze\{map_Name}_thumb.png")

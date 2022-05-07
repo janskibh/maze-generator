@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
-dossier = "D:/DATA JAN/_Python/krunker-map"
+dossier = os.getcwd()
 
 map_size = 60
 nb_towers = 6
