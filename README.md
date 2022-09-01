@@ -1,5 +1,5 @@
 # maze
-a maze generator for images and krunker
+a maze generator for images and krunker.io
 
 - parkour-maze.py generates a parkour maze map for krunker and a thumbnail saved as a json file in maps/ParkourMaze/Maze_nbr.json
 - randommap.py generates a random colored map for krunker FFA saved in maps/RandomMap
